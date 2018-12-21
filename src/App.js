@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import fire from './config/Fire';
 import Home from './views/Home';
-import Login from './views/Login';
-import Forgot from './views/Forgot';
+import Register from './views/Register';
 
 class App extends Component {
   constructor() {
     super();
     this.state = ({
-      user: null,
+      user: null
     });
     this.authListener = this.authListener.bind(this);
   }
@@ -33,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.state.user ? ( <Home/>) : (<Login />)}
+        {this.state.user ? ( <Home/>) : (<Register/>)}
       </div>
     );    
   }

@@ -1,3 +1,109 @@
 body {
   padding-top: 200px;
 }
+
+.run-whatever-login-btn { 
+  color: #FFFFFF; 
+  background-color: #9F0229; 
+  border-color: #9F0229; 
+} 
+ 
+.run-whatever-login-btn:hover, 
+.run-whatever-login-btn:focus, 
+.run-whatever-login-btn:active, 
+.run-whatever-login-btn.active, 
+.open .dropdown-toggle.run-whatever-login-btn { 
+  color: #FFFFFF; 
+  background-color: #9F0202; 
+  border-color: #9F0229; 
+} 
+ 
+.run-whatever-login-btn:active, 
+.run-whatever-login-btn.active, 
+.open .dropdown-toggle.run-whatever-login-btn { 
+  background-image: none; 
+} 
+ 
+.run-whatever-login-btn.disabled, 
+.run-whatever-login-btn[disabled], 
+fieldset[disabled] .run-whatever-login-btn, 
+.run-whatever-login-btn.disabled:hover, 
+.run-whatever-login-btn[disabled]:hover, 
+fieldset[disabled] .run-whatever-login-btn:hover, 
+.run-whatever-login-btn.disabled:focus, 
+.run-whatever-login-btn[disabled]:focus, 
+fieldset[disabled] .run-whatever-login-btn:focus, 
+.run-whatever-login-btn.disabled:active, 
+.run-whatever-login-btn[disabled]:active, 
+fieldset[disabled] .run-whatever-login-btn:active, 
+.run-whatever-login-btn.disabled.active, 
+.run-whatever-login-btn[disabled].active, 
+fieldset[disabled] .run-whatever-login-btn.active { 
+  background-color: #9F0229; 
+  border-color: #9F0229; 
+} 
+ 
+.run-whatever-login-btn .badge { 
+  color: #9F0229; 
+  background-color: #FFFFFF; 
+}
+
+
+/* appear - on page load */
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear.fade-appear-active {
+opacity: 1;
+transition: opacity 1000ms linear;
+}
+
+/* enter */
+.fade-enter {
+opacity: 0;
+z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 5000ms linear 5000ms;
+}
+
+/* exit */
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 5000ms linear;
+}
+.fade-exit-done {
+opacity: 0;
+}
+
+/* slide enter */
+.slide-enter {
+opacity: 0;
+transform: scale(0.97) translateY(5px);
+z-index: 1;
+}
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 3000ms linear 1000ms, transform 3000ms ease-in-out 1000ms;
+}
+
+/* slide exit */
+.slide-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  
+}
+.slide-exit.slide-exit-active {
+  opacity: 0;
+  transform: scale(0.97) translateY(5px);
+  transition: opacity 1500ms linear, transform 1500ms ease-out;
+}
+.slide-exit-done {
+opacity: 0;
+}
