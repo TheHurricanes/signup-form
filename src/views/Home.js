@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import fire from '../config/Fire';
 
+import CodeEditor from './CodeEditor';
+
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -15,9 +17,10 @@ class Home extends Component {
     render() {
         return (
         <div>
-            <h1>Welcome to Home</h1>
-            <button onClick={this.logout}>Logout</button>
-            </div>
+            {/*<h1>Welcome to Home</h1>*/}
+            {/*<button onClick={this.logout}>Logout</button>*/}
+            <CodeEditor/>
+        </div>
         );
     }
 }
